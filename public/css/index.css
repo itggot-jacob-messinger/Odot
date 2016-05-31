@@ -1,0 +1,23 @@
+.mdl-layout__header-row *, .mdl-layout__header-row .mdl-navigation__link{
+	color: black; 
+}
+
+.mdl-layout__content {
+	height: 100%;
+}
+
+.page-content {
+	height: 100%;
+}
+
+.mdl-button--fab {
+	position: fixed;
+	right: 32px;
+	bottom: 32px;
+}
+
+.toprow, .botrow {
+	width: 100%;
+	height: 50%;
+
+}
