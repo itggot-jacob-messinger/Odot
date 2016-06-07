@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="/css/show_lists.css">
+<div class="mdl-card mdl-shadow--4dp">
+	<ul class="mdl-list">
+		<% for list in @user.lists %>
+			<a href="/list/<%= list.id %>">
+				<li class="mdl-list__item">
+					<span class="mdl-list__item-primary-content">
+			      	<%= list.name %>
+			    	</span>
+				</li>
+			</a>
+		<% end %>
+	</ul>
+
+</div>

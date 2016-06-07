@@ -7,4 +7,5 @@ class List
 
 	belongs_to :user
 	belongs_to :group, :required => false
+	has n, :items
 end

@@ -1,0 +1,7 @@
+#login_form {
+	padding: 16px;
+	margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,26 @@
+.mdl-card {
+	margin: 0 auto;
+	margin-top: 10%;
+	min-height: 50%;
+	width: 50%;	
+}
+
+.list_item_title {
+	float: left;
+}
+
+.material-icons {
+	float:right;
+}
+
+.list_items {
+	list-style: none;
+}
+
+.add_item > form {
+	margin-left: 25%;
+}
+
+#add_group {
+	margin-left: 93.5%;
+}

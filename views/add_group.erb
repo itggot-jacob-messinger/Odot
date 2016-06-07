@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="/css/add_group.css">
+<div class="mdl-card mdl-shadow--4dp">
+	<ul class="mdl-list">
+		<% for group in @user.groups %>
+			<form action="/add_group" method="post">
+				<li class="mdl-list__item">
+					<span class="mdl-list__item-primary-content">
+			      		<%= group.name %>
+			    	</span>
+			    	<span class="mdl-list__item-secondary-content">
+			    		<input type="hidden" name="group_id" value="<% group.id %>">
+			    		<input type="hidden" name="list_id" value="<% @list.id %>">
+			    		<button class="mdl-button mdl-js-button mdl-button--icon" type="submit">
+							  <i class="material-icons">group_add</i>
+						</button>
+			    	</span>
+				</li>
+			</form>
+		<% end %>
+	</ul>
+</div>

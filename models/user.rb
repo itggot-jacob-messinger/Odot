@@ -9,6 +9,7 @@ include DataMapper::Resource
 	property :mail, String, required: true, unique: true
 	property :password, BCryptHash, required: true
 
+	has n, :lists
 	has n, :usergroupings
-	has n, :group, through: :usergroupings          
+	has n, :groups, through: :usergroupings          
 end

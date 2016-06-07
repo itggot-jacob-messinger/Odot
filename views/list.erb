@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="/css/list.css">
+
+<div class="mdl-card mdl-shadow--4dp">
+	<div class="add_item">
+		<form action= "/create/item" method="post">
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    			<input class="mdl-textfield__input" name="list_item" type="text" id="sample3">
+    			<label class="mdl-textfield__label" for="sample3">Text...</label>
+  			</div>
+			<input type="hidden" name="list_id" value="<%= @list.id %>">
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit">
+  				Add Item
+			</button>	
+		</form>
+	</div>
+	<ul class="mdl-list">
+		<% for item in @list.items %>
+			<li class="mdl-list__item">
+			    <span class="mdl-list__item-primary-content"><%= item.content %></span>
+			    <span class="mdl-list__item-secondary-content">
+			    	<form action="/delete/item" method="post">
+						<button class="mdl-button mdl-js-button mdl-button--icon">
+							  <i class="material-icons">delete</i>
+						</button>
+						<input type="hidden" name="item_id" value="<%= item.id %>">
+					</form>
+			    </span>
+			</li>	
+		<% end %>
+	</ul>
+	<a class="mdl-button mdl-js-button mdl-button--icon" id="add_group" href="/add_group/<%=@list.id%>">
+  		<i class="material-icons">group_add</i>
+	</a>
+</div>

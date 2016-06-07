@@ -28,20 +28,14 @@
 			<div class="mdl-layout-spacer"></div>
 			<!-- Navigation -->
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="">Mylists</a>
-				<a class="mdl-navigation__link" href="">Friends</a>
-				<a class="mdl-navigation__link" href="">Manage</a>
+				<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="/login">Login</a>
+				<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="/register">Register</a>
 			</nav>
 		</div>
 		</header>
 	
 		<main class="mdl-layout__content">
-			<div class="page-content"><%= yield %></div>
-			<a href="/create/list">
-				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-					<i class="material-icons">add</i>
-				</button>
-			</a>		
+			<div class="page-content"><%= yield %></div>		
 		</main>
 	</div>
 
